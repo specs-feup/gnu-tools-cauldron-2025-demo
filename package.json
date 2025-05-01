@@ -18,8 +18,7 @@
     "typedoc.config.js"
   ],
   "scripts": {
-    "run": "npx clava classic dist/main.js -p CxxSources/",
-    "run:watch": "npx clava dist/main.js -w dist/main.js -- clang CxxSources/",
+    "demo:structflat": "clava dist/StructFlattening.js -- clang inputs/structflattening/",
     "build": "tsc",
     "build:watch": "tsc --watch",
     "lint": "eslint .",
