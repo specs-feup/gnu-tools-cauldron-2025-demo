@@ -7,7 +7,7 @@ import { TransFlowConfig } from "@specs-feup/extended-task-graph/TransFlowConfig
 
 const topFunctionName = "edge_detect";
 const outputDir = "outputs";
-const appName = "edgedetect-transflow";
+const appName = "s32";
 const api = new ExtendedTaskGraphAPI(topFunctionName, outputDir, appName);
 
 // Run code transformation flow

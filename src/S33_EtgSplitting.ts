@@ -10,7 +10,7 @@ import Query from "@specs-feup/lara/api/weaver/Query.js";
 
 const topFunctionName = "edge_detect";
 const outputDir = "outputs";
-const appName = "edgedetect-transflow";
+const appName = "s33";
 const api = new ExtendedTaskGraphAPI(topFunctionName, outputDir, appName);
 
 // Run code transformation flow

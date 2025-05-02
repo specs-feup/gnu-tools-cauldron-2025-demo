@@ -18,12 +18,12 @@
     "typedoc.config.js"
   ],
   "scripts": {
-    "demo:s10": "clava dist/S10_StructFlattening.js -- clang inputs/structflattening/",
-    "demo:s20": "clava dist/S20_Synthesis.js -- clang inputs/synthesis/SynthesisScenario.c",
-    "demo:s30": "clava dist/S30_EtgTransforms.js -- clang inputs/etg/edge_detect.cpp",
-    "demo:s31": "clava dist/S31_EtgFull.js -- clang inputs/etg/edge_detect.cpp",
-    "demo:s32": "clava dist/S32_EtgMerging.js -- clang inputs/etg/edge_detect.cpp",
-    "demo:s33": "clava dist/S33_EtgSplitting.js -- clang inputs/etg/edge_detect.cpp",
+    "demo:s10": "npx clava classic dist/S10_StructFlattening.js -p inputs/scenario1/StructFlatteningScenario.c -of outputs/s10/",
+    "demo:s20": "npx clava classic dist/S20_Synthesis.js -p inputs/scenario2/SynthesisScenario.c -of outputs/s20/",
+    "demo:s30": "npx clava classic dist/S30_EtgTransforms.js -p inputs/scenario3/edge_detect.cpp -ncg",
+    "demo:s31": "npx clava classic dist/S31_EtgFull.js -p inputs/scenario3/edge_detect.cpp -ncg",
+    "demo:s32": "npx clava classic dist/S32_EtgMerging.js -p inputs/scenario3/edge_detect.cpp -ncg",
+    "demo:s33": "npx clava classic dist/S33_EtgSplitting.js -p inputs/scenario3/edge_detect.cpp -ncg",
     "build": "tsc",
     "build:watch": "tsc --watch"
   },
