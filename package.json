@@ -20,18 +20,16 @@
   "scripts": {
     "demo:structflat": "clava dist/StructFlattening.js -- clang inputs/structflattening/",
     "demo:synthesis": "clava dist/Synthesis.js -- clang inputs/synthesis/SynthesisScenario.c",
+    "demo:etg-trans": "clava dist/EtgTransforms.js -- clang inputs/etg/edge_detect.cpp",
+    "demo:etg-full": "clava dist/EtgFull.js -- clang inputs/etg/edge_detect.cpp",
     "build": "tsc",
-    "build:watch": "tsc --watch",
-    "lint": "eslint .",
-    "docs": "typedoc",
-    "test": "cross-env NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" jest --detectOpenHandles --forceExit src",
-    "test:cov": "npm run test -- --coverage",
-    "test:watch": "npm run test -- --watch"
+    "build:watch": "tsc --watch"
   },
   "dependencies": {
     "@specs-feup/clava": "^3.0.5",
     "@specs-feup/clava-code-transforms": "^1.0.0",
     "@specs-feup/clava-vitis-integration": "^1.0.0",
+    "@specs-feup/extended-task-graph": "^0.9.1",
     "@specs-feup/lara": "^3.0.4"
   },
   "devDependencies": {
