@@ -18,6 +18,8 @@
     "typedoc.config.js"
   ],
   "scripts": {
+    "demo:s00": "npx clava classic dist/S00_PrintCall.js -p inputs/scenario0/BasicScenario.c -of outputs/s00/",
+    "demo:s01": "npx clava classic dist/S01_PrintCallInteractive.js -p inputs/scenario0/BasicScenario.c -of outputs/s01/",
     "demo:s10": "npx clava classic dist/S10_StructFlattening.js -p inputs/scenario1/StructFlatteningScenario.c -of outputs/s10/",
     "demo:s20": "npx clava classic dist/S20_Synthesis.js -p inputs/scenario2/SynthesisScenario.c -of outputs/s20/",
     "demo:s30": "npx clava classic dist/S30_EtgTransforms.js -p inputs/scenario3/edge_detect.cpp -ncg",
@@ -36,6 +38,7 @@
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
+    "@specs-feup/clava-visualization": "^1.0.5",
     "@types/jest": "^29.5.12",
     "@typescript-eslint/eslint-plugin": "^7.16.0",
     "@typescript-eslint/parser": "^7.16.0",

@@ -1,0 +1,5 @@
+npm install @specs-feup/clava-visualization --save-dev
+npm install @specs-feup/clava-code-transforms@latest
+npm install @specs-feup/clava-vitis-integration@latest
+npm install @specs-feup/extended-task-graph@latest
+npm install @specs-feup/hoopa@latest
