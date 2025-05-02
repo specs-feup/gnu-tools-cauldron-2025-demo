@@ -28,6 +28,8 @@
     "demo:s31": "npx clava classic dist/S31_EtgFull.js -p inputs/scenario3/edge_detect.cpp -ncg",
     "demo:s32": "npx clava classic dist/S32_EtgMerging.js -p inputs/scenario3/edge_detect.cpp -ncg",
     "demo:s33": "npx clava classic dist/S33_EtgSplitting.js -p inputs/scenario3/edge_detect.cpp -ncg",
+    "demo:s40": "npx clava classic dist/S40_OffloadingTwoTasks.js -p inputs/scenario4/edge_detect.cpp -ncg",
+    "demo:s41": "npx clava classic dist/S41_OffloadingHotspot.js -p inputs/scenario4/edge_detect.cpp -ncg",
     "build": "tsc",
     "build:watch": "tsc --watch"
   },
@@ -36,6 +38,7 @@
     "@specs-feup/clava-code-transforms": "^1.0.0",
     "@specs-feup/clava-vitis-integration": "^1.0.0",
     "@specs-feup/extended-task-graph": "^0.9.1",
+    "@specs-feup/hoopa": "^0.5.1",
     "@specs-feup/lara": "^3.0.4"
   },
   "devDependencies": {
