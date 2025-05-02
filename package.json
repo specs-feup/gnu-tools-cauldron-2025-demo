@@ -20,7 +20,9 @@
   "scripts": {
     "demo:s00": "npx clava classic dist/S00_PrintCall.js -p inputs/scenario0/BasicScenario.c -of outputs/s00/",
     "demo:s01": "npx clava classic dist/S01_PrintCallInteractive.js -p inputs/scenario0/BasicScenario.c -of outputs/s01/",
-    "demo:s10": "npx clava classic dist/S10_StructFlattening.js -p inputs/scenario1/StructFlatteningScenario.c -of outputs/s10/",
+    "demo:s10": "npx clava classic dist/S10_ArrayFlattening.js -p inputs/scenario1/ArrayFlatteningScenario.c -of outputs/s10/",
+    "demo:s11": "npx clava classic dist/S11_StructFlattening.js -p inputs/scenario1/StructFlatteningScenario.c -of outputs/s11/ -std c11",
+    "demo:s12": "npx clava classic dist/S12_LoopStaticCount.js -p inputs/scenario1/LoopsScenario.c -of outputs/s12/",
     "demo:s20": "npx clava classic dist/S20_Synthesis.js -p inputs/scenario2/SynthesisScenario.c -of outputs/s20/",
     "demo:s30": "npx clava classic dist/S30_EtgTransforms.js -p inputs/scenario3/edge_detect.cpp -ncg",
     "demo:s31": "npx clava classic dist/S31_EtgFull.js -p inputs/scenario3/edge_detect.cpp -ncg",
