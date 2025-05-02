@@ -19,6 +19,7 @@
   ],
   "scripts": {
     "demo:structflat": "clava dist/StructFlattening.js -- clang inputs/structflattening/",
+    "demo:synthesis": "clava dist/Synthesis.js -- clang inputs/synthesis/SynthesisScenario.c",
     "build": "tsc",
     "build:watch": "tsc --watch",
     "lint": "eslint .",
@@ -30,6 +31,7 @@
   "dependencies": {
     "@specs-feup/clava": "^3.0.5",
     "@specs-feup/clava-code-transforms": "^1.0.0",
+    "@specs-feup/clava-vitis-integration": "^1.0.0",
     "@specs-feup/lara": "^3.0.4"
   },
   "devDependencies": {
