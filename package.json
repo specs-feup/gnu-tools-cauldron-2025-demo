@@ -18,10 +18,12 @@
     "typedoc.config.js"
   ],
   "scripts": {
-    "demo:structflat": "clava dist/StructFlattening.js -- clang inputs/structflattening/",
-    "demo:synthesis": "clava dist/Synthesis.js -- clang inputs/synthesis/SynthesisScenario.c",
-    "demo:etg-trans": "clava dist/EtgTransforms.js -- clang inputs/etg/edge_detect.cpp",
-    "demo:etg-full": "clava dist/EtgFull.js -- clang inputs/etg/edge_detect.cpp",
+    "demo:s10": "clava dist/S10_StructFlattening.js -- clang inputs/structflattening/",
+    "demo:s20": "clava dist/S20_Synthesis.js -- clang inputs/synthesis/SynthesisScenario.c",
+    "demo:s30": "clava dist/S30_EtgTransforms.js -- clang inputs/etg/edge_detect.cpp",
+    "demo:s31": "clava dist/S31_EtgFull.js -- clang inputs/etg/edge_detect.cpp",
+    "demo:s32": "clava dist/S32_EtgMerging.js -- clang inputs/etg/edge_detect.cpp",
+    "demo:s33": "clava dist/S33_EtgSplitting.js -- clang inputs/etg/edge_detect.cpp",
     "build": "tsc",
     "build:watch": "tsc --watch"
   },
