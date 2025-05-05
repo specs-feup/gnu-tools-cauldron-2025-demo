@@ -27,8 +27,10 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && apt-get install -y 
 # optional C/C++ related packages, install to ensure full compatibility and reproducibility
 apt-get install -y gnupg software-properties-common build-essential clang
 
-# change path to the demo folder if you're not there yet
-cd /path/to/demo/folder/clava-fccm-2025-demo
+# clone the repository
+# alternatively, download it as a .zip file, extract it, and open a terminal on the folder
+git clone https://github.com/specs-feup/clava-fccm-2025-demo
+cd clava-fccm-2025-demo
 
 # build project
 npm install
