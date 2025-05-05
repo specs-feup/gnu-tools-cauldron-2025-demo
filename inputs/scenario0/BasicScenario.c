@@ -5,7 +5,6 @@
 
 void matrix_mult(const double *A, const double *B, double *C, const int N, const int M, const int K)
 {
-
     for (int ii = 0; ii < N; ii++)
     {
         for (int jj = 0; jj < K; jj++)

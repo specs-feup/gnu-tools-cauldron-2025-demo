@@ -1,8 +1,8 @@
 rm -rf output_hls
 rm -rf outputs
-rm consumer_order.txt
-rm enum_integer_type.txt
-rm is_temporary.txt
-rm omp.txt
-rm packages.txt
-rm types_with_templates.txt
+rm -f consumer_order.txt
+rm -f enum_integer_type.txt
+rm -f is_temporary.txt
+rm -f omp.txt
+rm -f packages.txt
+rm -f types_with_templates.txt
