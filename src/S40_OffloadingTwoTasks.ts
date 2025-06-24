@@ -1,16 +1,14 @@
+import { BuiltinFpgaTarget } from "@specs-feup/hoopa/BuiltinFpgaPlatforms";
 import { HoopaAlgorithm, HoopaConfig, OffloadingBackend } from "@specs-feup/hoopa/HoopaAlgorithm";
 import { HoopaAPI } from "@specs-feup/hoopa/HoopaAPI";
-import { PredefinedTasksConfig } from "@specs-feup/hoopa/PredefinedTasksConfig";
+import { PredefinedTasksOptions } from "@specs-feup/hoopa/PredefinedTasksOptions";
 
-const config: HoopaConfig = {
-    decorators: [],
-    backends: [OffloadingBackend.XRT],
-    algorithm: {
-        name: HoopaAlgorithm.PREDEFINED_TASKS,
+const config = new HoopaConfig()
+    .addBackend(OffloadingBackend.XRT)
+    .addAlgorithm(HoopaAlgorithm.PREDEFINED_TASKS, {
         taskNames: ["convolve2d_rep2", "combthreshold"]
-    } as PredefinedTasksConfig,
-    target: "targets/ZCU102.yaml"
-};
+    } as PredefinedTasksOptions)
+    .addBuiltinFpgaTarget(BuiltinFpgaTarget.ZCU102);
 
 const hoopa = new HoopaAPI("edge_detect", config, "outputs/s40", "edgedetect");
 hoopa.runFromStart(false);

@@ -35,10 +35,10 @@
   },
   "dependencies": {
     "@specs-feup/clava": "^3.0.5",
-    "@specs-feup/clava-code-transforms": "1.0.0",
+    "@specs-feup/clava-code-transforms": "1.0.1",
     "@specs-feup/clava-vitis-integration": "1.0.0",
     "@specs-feup/extended-task-graph": "1.0.0",
-    "@specs-feup/hoopa": "0.6.0",
+    "@specs-feup/hoopa": "^0.7.1",
     "@specs-feup/lara": "^3.0.4"
   },
   "devDependencies": {

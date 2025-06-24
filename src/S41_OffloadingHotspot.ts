@@ -1,14 +1,13 @@
+import { BuiltinFpgaTarget } from "@specs-feup/hoopa/BuiltinFpgaPlatforms";
 import { HoopaAlgorithm, HoopaConfig, OffloadingBackend, TaskGraphDecorator } from "@specs-feup/hoopa/HoopaAlgorithm";
 import { HoopaAPI } from "@specs-feup/hoopa/HoopaAPI";
+import { SingleHotspotTaskOptions } from "@specs-feup/hoopa/SingleHotspotTaskOptions";
 
-const config: HoopaConfig = {
-    decorators: [TaskGraphDecorator.VITIS_HLS],
-    backends: [OffloadingBackend.XRT],
-    algorithm: {
-        name: HoopaAlgorithm.SINGLE_HOTSPOT
-    },
-    target: "targets/ZCU102.yaml"
-};
+const config = new HoopaConfig()
+    .addDecorator(TaskGraphDecorator.VITIS_HLS)
+    .addBackend(OffloadingBackend.XRT)
+    .addAlgorithm(HoopaAlgorithm.SINGLE_HOTSPOT, {} as SingleHotspotTaskOptions)
+    .addBuiltinFpgaTarget(BuiltinFpgaTarget.ZCU102);
 
 const hoopa = new HoopaAPI("edge_detect", config, "outputs/s41", "edgedetect");
 hoopa.runFromStart(false);
