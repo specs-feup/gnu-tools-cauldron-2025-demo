@@ -18,15 +18,10 @@
     "typedoc.config.js"
   ],
   "scripts": {
-    "demo:00": "npx clava classic dist/S00_PrintCall.js -p inputs/scenario0/BasicScenario.c -of outputs/s00/",
-    "demo:01": "npx clava classic dist/S01_PrintCallInteractive.js -p inputs/scenario0/BasicScenario.c -of outputs/s01/",
-    "demo:10": "npx clava classic dist/S10_ArrayFlattening.js -p inputs/scenario1/ArrayFlatteningScenario.c -of outputs/s10/",
+    "demo:00": "npx clava classic dist/S00_PrintCallInteractive.js -p inputs/scenario0/BasicScenario.c -of outputs/s00/",
+    "demo:10": "npx clava classic dist/S10_FunctionOutlining.js -p inputs/scenario1/FunctionOutliningScenario.c -of outputs/s10/",
     "demo:11": "npx clava classic dist/S11_StructFlattening.js -p inputs/scenario1/StructFlatteningScenario.c -of outputs/s11/ -std c11",
-    "demo:12": "npx clava classic dist/S12_LoopStaticCount.js -p inputs/scenario1/LoopsScenario.c -of outputs/s12/",
-    "demo:20": "npx clava classic dist/S20_EtgTransforms.js -p inputs/scenario2/edge_detect.cpp -ncg",
-    "demo:21": "npx clava classic dist/S21_EtgFull.js -p inputs/scenario2/edge_detect.cpp -ncg",
-    "demo:22": "npx clava classic dist/S22_EtgMerging.js -p inputs/scenario2/edge_detect.cpp -ncg",
-    "demo:23": "npx clava classic dist/S23_EtgSplitting.js -p inputs/scenario2/edge_detect.cpp -ncg",
+    "demo:20": "npx clava classic dist/S20_EtgFull.js -p inputs/scenario2/edge_detect.cpp -ncg",
     "demo:30": "npx clava classic dist/S30_Synthesis.js -p inputs/scenario3/SynthesisScenario.c -of outputs/s30/",
     "demo:40": "npx clava classic dist/S40_OffloadingTwoTasks.js -p inputs/scenario4/edge_detect.cpp -ncg",
     "demo:41": "npx clava classic dist/S41_OffloadingHotspot.js -p inputs/scenario4/edge_detect.cpp -ncg",
