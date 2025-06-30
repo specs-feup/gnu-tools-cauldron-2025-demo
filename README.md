@@ -1,20 +1,17 @@
 # clava-dac-2025-demo
 
-This repository holds all scenarios for the Clava demo presed at the [University Demonstration at DAC 2025](https://www.dac.com/Attend/Students-Scholarships/University-Demonstration-at-DAC) ([abstract](docs/FCCM_2025_Demo_Night.pdf)).
+This repository holds all scenarios for the Clava demo presed at the [University Demonstration at DAC 2025](https://www.dac.com/Attend/Students-Scholarships/University-Demonstration-at-DAC) ([abstract](docs/DAC_2025_University_Demonstration.pdf) | [poster](docs/DAC_2025_Demo_Poster.pdf)).
 
 This demo highlights the following repositories and their equivalent NPM packages:
 
-* clava ([GitHub](https://github.com/specs-feup/clava) | [NPM](https://www.npmjs.com/package/@specs-feup/clava))
-
-* clava-visualization ([GitHub](<https://github.com/specs-feup/clava-visualization>) | [NPM](www.npmjs.com/package/@specs-feup/clava-visualization))
-
-* clava-code-transforms ([GitHub](https://github.com/specs-feup/clava-code-transforms) | [NPM](https://www.npmjs.com/package/@specs-feup/clava-code-transforms))
-
-* extended-task-graph ([GitHub](https://github.com/specs-feup/extended-task-graph) | [NPM](https://www.npmjs.com/package/@specs-feup/extended-task-graph))
-
-* clava-vitis-integration ([GitHub](https://github.com/specs-feup/clava-vitis-integration) | [NPM](https://www.npmjs.com/package/@specs-feup/clava-vitis-integration))
-
-* hoopa  ([GitHub](https://github.com/specs-feup/hoopa) | [NPM](https://www.npmjs.com/package/@specs-feup/hoopa))
+Package | Description | GitHub | NPM
+---|---|---|---
+clava | The core distribution of the Clava C/C++ source-to-source compiler | [GitHub](https://github.com/specs-feup/clava) | [NPM](https://www.npmjs.com/package/@specs-feup/clava)
+clava-visualization | Renders an interactive web view of the program's AST, in a breakpoint-like fashion | [GitHub](<https://github.com/specs-feup/clava-visualization>) | [NPM](www.npmjs.com/package/@specs-feup/clava-visualization)
+clava-code-transforms | A set of advanced code transformations for Clava (function outlining and voidification, array and struct flattening, constant folding and propagation, loop static iteration annotation) | [GitHub](https://github.com/specs-feup/clava-code-transforms) | [NPM](https://www.npmjs.com/package/@specs-feup/clava-code-transforms)
+extended-task-graph | Generates an Extended Task Graph (ETG) representation of an application, with flexible granularity changes through task merging and splitting | [GitHub](https://github.com/specs-feup/extended-task-graph) | [NPM](https://www.npmjs.com/package/@specs-feup/extended-task-graph)
+clava-vitis-integration | Integration with Vitis HLS, allowing for the automated synthesis and place-and-route of selected functions, and the programatic insertion and configurations of HLS directives | [GitHub](https://github.com/specs-feup/clava-vitis-integration) | [NPM](https://www.npmjs.com/package/@specs-feup/clava-vitis-integration)
+hoopa  | Hoopa (Holistic optimization and partitioning algorithms) is a collection of HW/SW partitioning policies and algorithms that can partition and optimize an application for a CPU-FPGA system | [GitHub](https://github.com/specs-feup/hoopa) | [NPM](https://www.npmjs.com/package/@specs-feup/hoopa)
 
 ## Setup
 
@@ -39,9 +36,7 @@ npm install
 npm run build
 ```
 
-Alternatively, you can use the provided Dockerfile to setup a container ready to run the demo
-
-Note that whether you are using your local machine or a container, you need to have Vitis in the $PATH in order to run the flows that require interacting with it.
+Note that you need to have Vitis in $PATH in order to run scenario 30 and 41.
 
 \*Windows and MacOS are supported on paper, but are untested
 
@@ -56,3 +51,7 @@ You can run a scenario with the command `npm run demo:<n>`, where `n` is the sce
 * 30: Design space exploration of a kernel by calling Vitis iteratively
 * 40: Offloading two pre-selected tasks to an FPGA using XRT
 * 41: Annotating an ETG with Vitis synthesis reports and offloading the task with the most latency
+
+## Video Teaser
+
+[![YouTube Video Teaser](https://img.youtube.com/vi/JJVgWboF8OU/0.jpg)](https://www.youtube.com/watch?v=JJVgWboF8OU)
