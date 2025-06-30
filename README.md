@@ -1,10 +1,12 @@
-# clava-fccm-2025-demo
+# clava-dac-2025-demo
 
-This repository holds all scenarios for the Clava demo demonstrated at [FCCM 2025](https://www.fccm.org/) ([abstract](docs/FCCM_2025_Demo_Night.pdf)).
+This repository holds all scenarios for the Clava demo presed at the [University Demonstration at DAC 2025](https://www.dac.com/Attend/Students-Scholarships/University-Demonstration-at-DAC) ([abstract](docs/FCCM_2025_Demo_Night.pdf)).
 
 This demo highlights the following repositories and their equivalent NPM packages:
 
 * clava ([GitHub](https://github.com/specs-feup/clava) | [NPM](https://www.npmjs.com/package/@specs-feup/clava))
+
+* clava-visualization ([GitHub](<https://github.com/specs-feup/clava-visualization>) | [NPM](www.npmjs.com/package/@specs-feup/clava-visualization))
 
 * clava-code-transforms ([GitHub](https://github.com/specs-feup/clava-code-transforms) | [NPM](https://www.npmjs.com/package/@specs-feup/clava-code-transforms))
 
@@ -29,8 +31,8 @@ apt-get install -y gnupg software-properties-common build-essential clang
 
 # clone the repository
 # alternatively, download it as a .zip file, extract it, and open a terminal on the folder
-git clone https://github.com/specs-feup/clava-fccm-2025-demo
-cd clava-fccm-2025-demo
+git clone https://github.com/specs-feup/clava-dac-2025-demo
+cd clava-dac-2025-demo
 
 # build project
 npm install
@@ -45,22 +47,12 @@ Note that whether you are using your local machine or a container, you need to h
 
 ## Demo Scenarios
 
-You can run a scenario with the command `npm run demo:s<n>`, where `n` is the scenario ID, e.g., `npm run demo:s00` to run the first scenario
+You can run a scenario with the command `npm run demo:<n>`, where `n` is the scenario ID, e.g., `npm run demo:00` to run the first scenario
 
-* Scenario 0: Clava basics
-  * S00: use Clava to insert instrumentation
-  * S01: visualize Clava's AST using breakpoints
-* Scenario 1: Code transformations
-  * S10: Array flattening and constant folding/propagation
-  * S11: Struct flattening
-  * S12: Loop static iteration count annotation
-* Scenario 2: Extended Task Graph (ETG)
-  * S20: Reduction to a C/C++ subset in preparation for ETG generation
-  * S21: ETG generation
-  * S22: Decreasing the ETG's granularity: task merging
-  * S23: Increasing the ETG's granularity: task splitting
-* Scenario 3: Integration with Vitis HLS
-  * S30: Design space exploration of a kernel
-* Scenario 4: Holistic Optimization and Partitioning Algorithms (Hoopa)
-  * S40: Offloading two pre-selected tasks to an FPGA using XRT
-  * S41: Annotating an ETG with Vitis synthesis reports and offloading the task with the most latency
+* 00: use Clava to insert instrumentation and visualize Clava's AST using breakpoints
+* 10: Function outlining
+* 11: Struct flattening
+* 20: Extended Task Graph (ETG) generation
+* 30: Design space exploration of a kernel by calling Vitis iteratively
+* 40: Offloading two pre-selected tasks to an FPGA using XRT
+* 41: Annotating an ETG with Vitis synthesis reports and offloading the task with the most latency
