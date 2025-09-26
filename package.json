@@ -18,9 +18,9 @@
     "typedoc.config.js"
   ],
   "scripts": {
-    "demo:00": "npx clava classic dist/S00_PrintCallInteractive.js -p inputs/scenario0/BasicScenario.c -of outputs/s00/",
-    "demo:10": "npx clava classic dist/S10_FunctionOutlining.js -p inputs/scenario1/FunctionOutliningScenario.c -of outputs/s10/",
-    "demo:11": "npx clava classic dist/S11_StructFlattening.js -p inputs/scenario1/StructFlatteningScenario.c -of outputs/s11/ -std c11",
+    "demo:10": "npx clava classic dist/S10_PrintCallInteractive.js -p inputs/scenario1/BasicScenario.c -of outputs/s00/",
+    "demo:11": "npx clava classic dist/S11_FunctionOutlining.js -p inputs/scenario1/FunctionOutliningScenario.c -of outputs/s10/",
+    "demo:12": "npx clava classic dist/S12_StructFlattening.js -p inputs/scenario1/StructFlatteningScenario.c -of outputs/s11/ -std c11",
     "demo:20": "npx clava classic dist/S20_EtgFull.js -p inputs/scenario2/edge_detect.cpp -ncg",
     "demo:30": "npx clava classic dist/S30_Synthesis.js -p inputs/scenario3/SynthesisScenario.c -of outputs/s30/",
     "demo:40": "npx clava classic dist/S40_OffloadingTwoTasks.js -p inputs/scenario4/edge_detect.cpp -ncg",

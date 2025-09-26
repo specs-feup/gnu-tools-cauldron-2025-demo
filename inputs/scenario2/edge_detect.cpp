@@ -122,10 +122,6 @@ void edge_detect(int image_rgb[H][W * 3],
 
     convolve2d(image_gray, filter, output);
 
-#ifdef FORCE_EXTERNAL
-    printf("This is just here to force an external call, don't mind me. Here's a number: %d\n", filter[4]);
-#endif
-
     filter[0][0] = 1;
     filter[0][1] = 0;
     filter[0][2] = -1;
@@ -164,20 +160,14 @@ int main()
     int output[H][W] = {0};
 
     auto start = high_resolution_clock::now();
-#if ITER > 0
-    int i;
-    for (i = 0; i < ITER; i++)
-    {
-#endif
-        edge_detect(
-            image_rgb,
-            image_gray,
-            temp_buf,
-            filter,
-            output);
-#if ITER > 0
-    }
-#endif
+
+    edge_detect(
+        image_rgb,
+        image_gray,
+        temp_buf,
+        filter,
+        output);
+
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
     std::cout << "Duration: " << duration.count() << std::endl;

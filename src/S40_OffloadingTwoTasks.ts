@@ -6,7 +6,7 @@ import { PredefinedTasksOptions } from "@specs-feup/hoopa/PredefinedTasksOptions
 const config = new HoopaConfig()
     .addBackend(OffloadingBackend.XRT)
     .addAlgorithm(HoopaAlgorithm.PREDEFINED_TASKS, {
-        taskNames: ["convolve2d_rep2", "combthreshold"]
+        taskNames: ["edge_detect_out0", "convolve2d"]
     } as PredefinedTasksOptions)
     .addBuiltinFpgaTarget(BuiltinFpgaTarget.ZCU102);
 
