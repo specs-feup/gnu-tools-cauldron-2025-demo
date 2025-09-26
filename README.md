@@ -1,6 +1,6 @@
 # gnu-tools-cauldron-2025-demo
 
-This repository holds all scenarios for the Clava demo presed at the [GNU Tools Cauldron 2025](https://conf.gnu-tools-cauldron.org/opo25/)
+This repository holds all scenarios for the Clava demo presed at the [GNU Tools Cauldron 2025](https://conf.gnu-tools-cauldron.org/opo25/). Slides are available [here](docs/GNU_Tools_Cauldron_Presentation.pptx).
 
 This demo highlights the following repositories and their equivalent NPM packages:
 
